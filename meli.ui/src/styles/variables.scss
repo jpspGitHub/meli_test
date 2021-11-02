@@ -1,0 +1,36 @@
+$colors: (main : #FFE600,
+    back: #EEEEEE,
+    primary: #3483FA,
+    title: #333333,
+    sub-title: #666666,
+    description: #999999,
+    white: #FFF);
+
+$content-spacing: (small: 16px,
+    big: 32px);
+
+$img: (small: 180px,
+    big: 680px,
+    radio: 4px);
+
+$header-height: 56px;
+$content-width: 1184px;
+
+$detail-font: (
+    x-small: 14px,
+    small: 16px,
+    medium: 24px,
+    big: 28px,
+    x-big: 46px
+    );
+
+$list-font:(
+    small: 12px,
+    medium: 18px,
+    big: 24px
+);
+
+$page-font:(
+    small: 14px,
+    medium: 18px
+)

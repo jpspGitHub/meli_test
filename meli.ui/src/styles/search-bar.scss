@@ -1,0 +1,27 @@
+@import "variables.scss";
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    padding: 0 map-get($map: $content-spacing, $key: small);
+  
+    input {
+      border-radius: 2px;
+      background-color: map-get($map: $colors, $key: white);
+      border: 0 rgba(0, 0, 0, .2);
+      max-height: 39px;
+      color: map-get($map: $colors, $key: title);
+      font-size: map-get($map: $page-font, $key: medium);
+      width: 100%;
+      margin: 0;
+      font-family: inherit;
+      padding: 7px 60px 9px 15px;
+    }
+  
+    button {
+      border-radius: 0 2px 2px 0;
+      width: 46px;
+      border: 0 rgba(0, 0, 0, .2);
+      cursor: pointer;
+    }
+  }

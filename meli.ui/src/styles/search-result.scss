@@ -1,0 +1,50 @@
+@import "variables.scss";
+
+.search-result {
+  .search-item {
+    border-bottom: thin solid map-get($map: $colors, $key: back);
+    display: flex;
+    padding: map-get($map: $content-spacing, $key: small);
+
+    .item-img {
+      margin-right: map-get($map: $content-spacing, $key: small);
+      width: map-get($map: $img, $key: small);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        height: map-get($map: $img, $key: small);
+        max-width: map-get($map: $img, $key: small);
+        border-radius: map-get($map: $img, $key: radio);
+      }
+    }
+
+    .item-detail {
+      display: flex;
+
+      .item-sale-info {
+        display: flex;
+        flex-direction: column;
+        width: 732px;
+        max-width: 732px;
+
+        .price {
+          font-size: map-get($map: $list-font, $key: big);
+          margin-bottom: map-get($map: $content-spacing, $key: big);
+          color: map-get($map: $colors, $key: title);
+        }
+
+        .title {
+          font-size: map-get($map: $list-font, $key: medium);
+          color: map-get($map: $colors, $key: sub-title);
+        }
+      }
+
+      .location-info {
+        font-size: map-get($map: $list-font, $key: small);
+        color: map-get($map: $colors, $key: description);
+      }
+    }
+  }
+}

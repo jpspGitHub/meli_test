@@ -1,0 +1,16 @@
+@import 'variables.scss';
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    img {
+      height: 300px;
+    }
+  
+    .text-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }

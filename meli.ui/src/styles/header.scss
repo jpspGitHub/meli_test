@@ -1,0 +1,16 @@
+@import 'variables.scss';
+
+.header {
+    height: $header-height;
+    width: 100%;
+    background-color: map-get($map: $colors, $key: main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

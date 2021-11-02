@@ -1,0 +1,62 @@
+@import "variables.scss";
+
+.product-detail {
+    padding: 0 map-get($map: $content-spacing, $key: big);
+  
+    .product-header {
+      display: flex;
+      justify-content: space-between;
+  
+      .img {
+        width: map-get($map: $img, $key: big);
+        height: map-get($map: $img, $key: big);
+      }
+  
+      .sale-detail {
+        margin-top: map-get($map: $content-spacing, $key: big);
+        margin-left: 48px;
+        max-width: 368px;
+        width: 368px;
+        display: flex;
+        flex-direction: column;
+  
+        .sold-info {
+          color: map-get($map: $colors, $key: sub-title);
+          font-size: map-get($map: $detail-font, $key: x-small);
+          margin: 0 0 map-get($map: $content-spacing, $key: small) 0;
+        }
+  
+        .title {
+          color: map-get($map: $colors, $key: title);
+          font-size: map-get($map: $detail-font, $key: medium);
+          margin: 0 0 map-get($map: $content-spacing, $key: big) 0;
+        }
+  
+        .price {
+          color: map-get($map: $colors, $key: title);
+          font-size: map-get($map: $detail-font, $key: x-big);
+          margin: 0 0 map-get($map: $content-spacing, $key: big) 0;
+        }
+  
+      }
+    }
+  
+    .product-description {
+      margin-top: map-get($map: $content-spacing, $key: big);
+  
+      .title {
+        color: map-get($map: $colors, $key: title);
+        margin: 0;
+        font-size: map-get($map: $detail-font, $key: big);
+        font-weight: 400;
+        padding-bottom: map-get($map: $content-spacing, $key: big);
+      }
+  
+      .text {
+        color: map-get($map: $colors, $key: description);
+        margin: 0;
+        font-size: map-get($map: $detail-font, $key: small);
+        padding-bottom: map-get($map: $content-spacing, $key: big);
+      }
+    }
+  }

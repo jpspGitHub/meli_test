@@ -1,0 +1,18 @@
+@import "variables.scss";
+
+.breadcrumb {
+    font-size: map-get($map: $page-font, $key: small);
+    color: map-get($map: $colors, $key: sub-title);
+    padding: map-get($map: $content-spacing, $key: small) 0;
+  
+    .link:not(:last-child) {
+      &::after {
+        margin: 0 8px;
+        content: '>';
+      }
+    }
+  
+    .link:last-child {
+      font-weight: 600;
+    }
+  }
